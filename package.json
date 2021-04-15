@@ -1,0 +1,30 @@
+{
+  "name": "remove-labels-action",
+  "version": "1.0.0",
+  "description": "GitHub Action for removing labels",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "package": " npm run build && ncc build lib/index.js -o dist --source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peter-murray/remove-labels-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peter-murray/remove-labels-action/issues"
+  },
+  "homepage": "https://github.com/peter-murray/remove-labels-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.7",
+    "@actions/github": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.39",
+    "@vercel/ncc": "^0.28.3",
+    "typescript": "^4.2.4"
+  }
+}

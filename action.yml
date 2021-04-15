@@ -1,0 +1,29 @@
+name: remove-labels-action
+description: Remove labels from an issue or pull request.
+author: Peter Murray
+
+inputs:
+  github_token:
+    description: GitHub access token
+    default: ${{ github.token }}
+    required: true
+
+  labels:
+    description: The labels to remove, separated by a comma if there are multiple entries.
+    required: true
+
+  repo:
+    description: The owner and repository name. e.g. octodemo/bookstore, defaults to the current repository if not specified.
+    required: false
+
+  issue_number:
+    description: The number of the issue or pull request, which will default to extracting from the workflow event if not specified.
+    required: false
+
+branding:
+  icon: bookmark
+  color: blue
+
+runs:
+  using: node12
+  main: dist/index.js
