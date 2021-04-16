@@ -13,7 +13,7 @@ A GitHub Action that will remove labels from Issues and Pull Requests.
 
 ## Examples
 
-Ensuring all labels are removed if currently present on an issue from an workflow event for an issue (like issue:
+Ensuring all labels are removed if currently present on an issue from an workflow event for an issue (like issues/issues_comments/pull_request):
 ```
 - name: Remove all specified labels if present
   uses: peter-murray/remove-labels-action@v1
