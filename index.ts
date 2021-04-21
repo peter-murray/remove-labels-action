@@ -40,7 +40,7 @@ function removeLabel(octokit, repo, issueNumber: number, label: string): Promise
   })
   .catch(err => {
     // Ignore errors that provide the label is not there
-    if (err.status !== 404 || err.status !== 410) {
+    if (err.status !== 404 && err.status !== 410) {
       core.error(`Unexpected error status: ${err.status} with message: ${err.message}`);
       throw err;
     }
