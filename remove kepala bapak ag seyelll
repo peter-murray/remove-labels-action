@@ -1,0 +1,2 @@
+- name: remove-labels-action
+  uses: peter-murray/remove-labels-action@v1.0.0
